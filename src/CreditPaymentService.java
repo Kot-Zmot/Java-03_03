@@ -3,7 +3,7 @@ public class CreditPaymentService {
         double paymentMonth;
         double percentMonth = percent / (100 * 12);
         double months = term * 12;
-        paymentMonth = credit * ((percentMonth * ((1 + percentMonth) ^ months)) / ((1 + percentMonth) ^ months) - 1 );
+        paymentMonth = credit * percentMonth * (Math.pow((1 + percentMonth), months) / (Math.pow((1 + percentMonth), months) - 1 ));
         return paymentMonth;
     }
 }

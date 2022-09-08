@@ -6,7 +6,7 @@ public class Main {
         // Процентная ставка, %
         double percent = 9.99;
         // Срок кредитования, лет
-        double term = 1;
+        double term = 2;
 
         double payment = service.calculate(credit, percent, term);
         // Приведение дроби
